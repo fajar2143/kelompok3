@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keberlangsungan Studi Mahasiswa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Keberlangsungan Studi Mahasiswa</h1>
+        <nav>
+            <ul>
+                <li><a href="#mahasiswa">Data Mahasiswa</a></li>
+                <li><a href="#mata_kuliah">Mata Kuliah</a></li>
+                <li><a href="#riwayat">Riwayat Studi</a></li>
+                <li><a href="#dosen">Dosen</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="mahasiswa">
+            <h2>Data Mahasiswa</h2>
+            <form id="formMahasiswa" action="proses_mahasiswa.php" method="POST">
+                <input type="text" id="nama" name="nama" placeholder="Nama Mahasiswa">
+                <input type="text" id="nim" name="nim" placeholder="NIM">
+                <button type="submit">Simpan</button>
+            </form>
+            <div id="listMahasiswa"></div>
+        </section>
+        
+
+        <section id="mata_kuliah">
+            <h2>Mata Kuliah</h2>
+            <form id="formMataKuliah">
+                <input type="text" id="kode_mk" placeholder="Kode Mata Kuliah">
+                <input type="text" id="nama_mk" placeholder="Nama Mata Kuliah">
+                <button type="submit">Simpan</button>
+            </form>
+            <div id="listMataKuliah"></div>
+        </section>
+
+        <section id="riwayat">
+            <h2>Riwayat Studi</h2>
+            <form id="formRiwayat">
+                <input type="text" id="nim_riwayat" placeholder="NIM Mahasiswa">
+                <input type="text" id="kode_mk_riwayat" placeholder="Kode Mata Kuliah">
+                <input type="text" id="nilai" placeholder="Nilai">
+                <button type="submit">Simpan</button>
+            </form>
+            <div id="listRiwayat"></div>
+        </section>
+
+        <section id="dosen">
+            <h2>Data Dosen</h2>
+            <form id="formDosen">
+                <input type="text" id="nidn" placeholder="NIDN">
+                <input type="text" id="nama_dosen" placeholder="Nama Dosen">
+                <button type="submit">Simpan</button>
+            </form>
+            <div id="listDosen"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Keberlangsungan Studi Mahasiswa</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
